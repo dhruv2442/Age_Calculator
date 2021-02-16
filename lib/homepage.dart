@@ -83,22 +83,8 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+        backgroundColor: Colors.black,
         body: Container(
-          decoration: BoxDecoration(
-            gradient: LinearGradient(
-              begin: Alignment.topCenter,
-              end: Alignment.bottomCenter,
-              colors: [
-                Color(0xFFFF0000),
-                Color(0xFFFF7F00),
-                Color(0xFFFFFF00),
-                Color(0xFF00FF00),
-                Color(0xFF0000FF),
-                Color(0xFF2E2B5F),
-                Color(0xFF8B00FF),
-              ],
-            ),
-          ),
           child: Column(
             children: [
               SizedBox(
@@ -123,7 +109,7 @@ class _HomePageState extends State<HomePage> {
                     Text(
                       "Today",
                       style: TextStyle(
-                          color: Color(0xFF8B00FF),
+                          color: Colors.white,
                           fontWeight: FontWeight.w700,
                           fontSize: 25),
                     ),
